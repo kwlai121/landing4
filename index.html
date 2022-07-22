@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beach20 | Beach20.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/blueSky.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+</head>
+<body>
+   <div class="container">
+
+        <div class="header">
+
+            <div class="hbox1"><img src="img/logo.png"></div>
+            <div class="hbox2">
+               <form action="">
+                    <div class="hbox2_1"><label for="">Username</label></div>
+                    <div class="hbox2_2"><input type="text"></div>
+                    <div class="hbox2_3"><label for="">Password</label></div>
+                    <div class="hbox2_4"><input type="password"></div>                 
+                    <div class="hbox2_5"><button>Login</button></div>      
+					<div class="hbox2_6"><a href="#">Go to Classic</a></div>  				
+               </form>
+                    
+
+            </div>
+            
+        </div>
+       <a class="toggle open" href="#nav"><i class="fas fa-bars fa-w-14 fa-1x" style='color: #93C23E'></i></a>
+       <nav id="nav" class="navbar" role="navigation">
+			
+			<a class="toggle close" href="#">×</a>	
+            <ul class="menu-bar">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="#">Rules</a></li>
+                <li><a href="#">Agents</a></li>
+            </ul>
+            
+       </nav>
+       
+       <main class="slideshow">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+
+            <img src="img/FLUIDLIVE.jpg" style="width:100%">
+       
+            </div>
+        
+            <div class="mySlides fade">
+
+            <img src="img/NFL_general_Dak.jpg" style="width:100%">
+      
+            </div>
+        
+            <div class="mySlides fade">
+ 
+            <img src="img/mlb.jpg" style="width:100%">
+     
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+       </main>
+       
+       <div class="widget1">
+            <img src="img/ingamewagering1.jpg" alt="">
+       </div>
+       
+       <div class="widget2">
+          <img src="img/mobilewagering02.jpg" alt="">
+       </div>
+       
+       <footer class="footer">
+            <ul class="menu-bar-footer">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="#">Rules</a></li>
+                <li><a href="#">Agents</a></li>
+            </ul>
+            <p>Copyright © 2022 Yourlogo</p>
+       </footer>
+       
+   </div>
+    
+</body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+</html>
